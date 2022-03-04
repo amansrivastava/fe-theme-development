@@ -1,0 +1,8 @@
+# Schema for the configuration files of the Forty theme.
+forty.settings:
+  type: theme_settings
+  label: 'Forty settings'
+  mapping:
+    font_size:
+      type: integer
+      label: Font size

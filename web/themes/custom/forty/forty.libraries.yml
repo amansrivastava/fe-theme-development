@@ -1,0 +1,14 @@
+# Main theme library.
+global:
+  js:
+    js/jquery.min.js: {}
+    js/jquery.scrolly.min.js: {}
+    js/jquery.scrollex.min.js: {}
+    js/breakpoints.min.js: {}
+    js/browser.min.js: {}
+    js/forty.js: {}
+    js/util.js: {}
+    js/main.js: {}
+  css:
+    base:
+      css/main.css: {}
