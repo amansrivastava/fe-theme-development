@@ -150,7 +150,7 @@
 			@include vendor('filter', 'blur(0.5em)');
 		}
 
-		#menu {
+		#menu, #block-main-menu {
 			@include vendor('pointer-events', 'auto');
 			opacity: 1;
 			visibility: visible;

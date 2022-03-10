@@ -1,7 +1,8 @@
 {
   "name": "forty",
+  "description": "Forty theme by html5up.net",
   "scripts": {
-    "sass-watch": "node-sass -w --output-style expanded scss -o css",
+    "sass-watch": "node-sass -w --output-style expanded sass -o css",
     "sass-compile": "node-sass --output-style expanded sass -o css",
     "livereload": "livereload css",
     "start": "run-p sass-watch livereload"

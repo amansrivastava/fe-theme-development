@@ -232,7 +232,7 @@
 		});
 
 	// Menu.
-		var $menu = $('#block-main-menu'),
+		var $menu = $('#menu'),
 			$menuInner;
 
 		$menu.wrapInner('<div class="inner"></div>');

@@ -83,7 +83,7 @@
 					padding-right: 1.5em;
 				}
 
-				&[href="#menu"] {
+				&[href="#menu"], &[href="#block-main-menu"] {
 					padding-right: 3.325em !important;
 
 					&:before, &:after {

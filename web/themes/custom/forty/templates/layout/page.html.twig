@@ -44,8 +44,11 @@
  */
 #}
 <div id="wrapper" class="layout-container">
-
-  <header id="header" role="banner">
+{% set header_attributes = create_attribute({'id': 'header', 'role': 'header'}) %}
+{% if not node %}
+  {% set header_attributes = header_attributes.addClass(['alt']) %}
+{% endif %}
+  <header {{ header_attributes }}>
     {{ page.header }}
     <nav>
       <a href="#menu">Menu</a>
@@ -53,7 +56,7 @@
     {{ page.primary_menu }}
   </header>
 
-  
+
   {{ page.secondary_menu }}
 
   {{ page.breadcrumb }}
@@ -65,21 +68,13 @@
   <div id="main" role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
+    {% if node %}
+      <div class="layout-content inner">
+    {% else %}
     <div class="layout-content">
+    {% endif %}
       {{ page.content }}
     </div>{# /.layout-content #}
-
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
 
   </main>
   {% if page.footer %}
